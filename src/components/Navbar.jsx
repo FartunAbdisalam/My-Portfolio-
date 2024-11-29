@@ -2,10 +2,8 @@ import { useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
-// import { FaGithubSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
-// import { navIcons } from "../constants/index";
 import { navItems } from "../constants/index";
 
 const Navbar = () => {
@@ -14,7 +12,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-grey-700 bg-black/70 px-16 py-5 text-white backdrop-blur-md md:justify-evenly ">
+    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-grey-700 bg-black/70 px-16 py-5 text-white backdrop-blur-md md:justify-evenly">
       <a
         href="#home"
         className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100"

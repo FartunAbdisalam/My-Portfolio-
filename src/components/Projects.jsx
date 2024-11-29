@@ -4,9 +4,6 @@ import DevOps from "../assets/devops.png";
 import { motion } from "framer-motion";
 import { CiGlobe } from "react-icons/ci";
 import { VscGithubInverted } from "react-icons/vsc";
-// import { FaGithub } from "react-icons/fa" <FaGithub />;
-import { div, span } from "framer-motion/client";
-import { IconContext } from "react-icons";
 
 const projectsData = [
   {
@@ -16,8 +13,14 @@ const projectsData = [
       "Single informational page. It has features, Pricing and Testimonials. Tailwind css is used for designing it. React Js is used for reusabillity and performance. Responsive on all screens",
     technologies: ["React", "Tailwind css", "Mobile Responsive"],
     links: [
-      { icon: <CiGlobe size={32} />, link: "#" },
-      { icon: <VscGithubInverted size={28} />, link: "#" },
+      {
+        icon: <CiGlobe size={32} />,
+        link: "https://kismayotechfirm.netlify.app/",
+      },
+      {
+        icon: <VscGithubInverted size={28} />,
+        link: "https://github.com/FartunAbdisalam/devops",
+      },
     ],
   },
   {
@@ -27,8 +30,14 @@ const projectsData = [
       "With just the title of the film or series, a user can search MovieHub for information about the film or series, including its poster and year of release. React.js, Tailwind CSS, and the OMDb API were used in its creation.",
     technologies: ["React", "CSS", "HTML", "OMDb API", "Mobile Responsive"],
     links: [
-      { icon: <CiGlobe size={32} />, link: "#" },
-      { icon: <VscGithubInverted size={28} />, link: "#" },
+      {
+        icon: <CiGlobe size={32} />,
+        link: "https://moviehub-app01.netlify.app/",
+      },
+      {
+        icon: <VscGithubInverted size={28} />,
+        link: "https://github.com/FartunAbdisalam/react-movie-app",
+      },
     ],
   },
   {
@@ -38,8 +47,14 @@ const projectsData = [
       "A website for tracking your ongoing tasks where data is not lost after user closes the page or refreshes it, Local Storage was used to handle that. Drag and drop tasks to columns",
     technologies: ["HTML", "CSS", "JavaScript", "Mobile Responsive"],
     links: [
-      { icon: <CiGlobe size={32} />, link: "#" },
-      { icon: <VscGithubInverted size={28} />, link: "#" },
+      {
+        icon: <CiGlobe size={32} />,
+        link: "https://fartunabdisalam.github.io/Drag-and-Drop/",
+      },
+      {
+        icon: <VscGithubInverted size={28} />,
+        link: "https://github.com/FartunAbdisalam/Drag-and-Drop",
+      },
     ],
   },
 ];
@@ -60,11 +75,14 @@ const ScrollReveal = ({ children }) => {
 const ProjectCard = ({ project }) => {
   return (
     <ScrollReveal>
-      <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
+      <div
+        id="projects"
+        className="flex flex-col items-center gap-8 lg:flex-row lg:gap-24"
+      >
         <img
           src={project.img}
           alt=""
-          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]"
+          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 lg:w-[300px]"
         />
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-3">
