@@ -1,6 +1,7 @@
 import movie from "../assets/movie.png";
 import kanban from "../assets/kanban.png";
 import DevOps from "../assets/devops.png";
+import cms from "../assets/cms.jpg";
 import { motion } from "framer-motion";
 import { CiGlobe } from "react-icons/ci";
 import { VscGithubInverted } from "react-icons/vsc";
@@ -37,6 +38,19 @@ const projectsData = [
       {
         icon: <VscGithubInverted size={28} />,
         link: "https://github.com/FartunAbdisalam/react-movie-app",
+      },
+    ],
+  },
+  {
+    img: cms,
+    title: "Contact Management System",
+    description:
+      "Production-ready contact management system designed to manage contacts with secure user authentication and JWT-based authorization, the project implements clean architecture, modular design, centralized error-handling middleware, hashed credentials, secure protected routes. Each user has access to it’s own DB of contacts and can perform the CRUD operation successfully.",
+    technologies: ["NodeJs", "Expressjs", "MongoDB", "RESTful API", "JWT Authentication",],
+    links: [
+      {
+        icon: <VscGithubInverted size={28} />,
+        link: "https://github.com/FartunAbdisalam/Contact-Management-System/tree/main/mycontacts-backend",
       },
     ],
   },

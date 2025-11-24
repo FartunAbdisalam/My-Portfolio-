@@ -33,7 +33,7 @@ const Navbar = () => {
 
       <ul className="hidden md:flex gap-5">
         <a
-          href="#"
+          href="https://github.com/FartunAbdisalam"
           className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100"
         >
           <li>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/fartun-abdisalam-226aa1314"
           className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100"
         >
           <li>
@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
         </a>
         <a
-          href="#"
+          href="https://www.facebook.com/share/1CaWczJbvf/?mibextid=wwXIfr"
           className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100"
         >
           <li>

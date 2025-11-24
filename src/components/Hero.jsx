@@ -1,4 +1,6 @@
-import pic2 from "../assets/pic2.png";
+// import pic2 from "../assets/pic2.png";
+import heroPic from "../assets/hp1.jpg";
+import resume from "../assets/Fartun-resume.pdf";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -20,20 +22,21 @@ const Hero = () => {
       id="home"
       className="px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32 mt-10"
     >
-      <div className="flex flex-wrap lg:flex-row-reverse w-full">
+      <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:p-8">
             <motion.img
-              src={pic2}
+              src={heroPic}
               alt="fartun"
-              className="border border-stone-900 rounded-3xl "
+              className="border border-stone-900 rounded-3xl lg:h-96 "
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.5 }}
             />
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 ml-5 lg:ml-0">
+  
           <motion.div
             initial="hidden"
             animate="visible"
@@ -54,7 +57,7 @@ const Hero = () => {
             </motion.span>
             <motion.p
               variants={childVariants}
-              className="md:text-lg text-pretty text-left text-sm text-gray-400 my-3"
+              className="md:text-lg text-pretty text-center lg:text-left text-sm text-gray-400 my-3"
             >
               I am a software engineering graduate who has a Passion for coding
               and innovation. I have strong foundation in full-stack web
@@ -64,16 +67,18 @@ const Hero = () => {
             </motion.p>
             <motion.a
               variants={childVariants}
-              href="#"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              download
+              download= "Fartun Abdisalam Resume"
               className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10"
             >
               Download Resume
             </motion.a>
           </motion.div>
+        
         </div>
+
       </div>
     </div>
   );

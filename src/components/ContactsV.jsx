@@ -9,7 +9,7 @@ export const contactsInfo = [
   },
   {
     icon: <LuLink size={28} />,
-    link: "#",
+    link: "https://www.linkedin.com/in/fartun-abdisalam-226aa1314",
     info: "Linkedln",
   },
 ];
